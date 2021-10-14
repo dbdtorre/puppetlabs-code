@@ -4,7 +4,7 @@ class dt_users::master
     group 
     { 'masters':
         ensure => present,
-        gid => '50',
+        gid => '6970',
     }
     user 
     {  'masters':
@@ -12,7 +12,7 @@ class dt_users::master
         expiry => absent,
         managehome => true,
         shell => '/bin/bash',
-        uid => '49',
+        uid => '6969',
         gid => 'masters',
        
     }
