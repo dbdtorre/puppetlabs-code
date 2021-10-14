@@ -1,9 +1,19 @@
 class dt_users::master
 {
 
+    group 
+    { 'masters':
+        ensure => present,
+        gid => '1003',
+    }
     user 
     {   'masters':
         ensure   => present,
+        expiry => absent,
+        managehome => true,
+        shell => '/bin/bash',
+        uid => '1002',
+        gid => 'masters',
        
     }
 
