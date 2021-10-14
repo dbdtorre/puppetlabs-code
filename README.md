@@ -1,0 +1,2 @@
+# puppetlabs-code
+puppet-config
